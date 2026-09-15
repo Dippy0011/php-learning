@@ -1,0 +1,12 @@
+{
+    "name": "ruslan/php-learning",
+    "description": "My PHP learning project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Руслан Багов",
+            "email": "bagovrusl@gmail.com"
+        }
+    ],
+    "require": {}
+}
