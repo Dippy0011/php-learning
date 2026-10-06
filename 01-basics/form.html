@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+    <head>
+        <title>Профиль разработчика</title>
+        <meta charset="utf-8" /> 
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    <body>
+        <form action="form.php" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required pattern="[A-Za-zА-Яа-яЁё ]+" title="Используйте только буквы и пробелы" />
+            <label for="age">Возраст:</label>
+            <input type="text" id="age" name="age" required inputmode="numeric" pattern="[0-9]+" title="Используйте только цифры" />
+            <label for="city">Город:</label>
+            <input type="text" id="city" name="city" required pattern="[A-Za-zА-Яа-яЁё ]+" title="Используйте только буквы и пробелы" />
+
+            <label for="phpProficiencyLevel">Уровень PHP</label>
+            <select name="phpProficiencyLevel" id="phpProficiencyLevel">
+                <option value="Junior">Junior</option>
+                <option value="Middle">Middle</option>
+                <option value="Senior">Senior</option>
+            </select>
+
+            <label for="whatADeveloperStudies">Что изучает разработчик</label>
+            <select name="whatADeveloperStudies[]" multiple size="4" id="whatADeveloperStudies">
+                <option value="PHP" selected>PHP</option>
+                <option value="SQL" selected>SQL</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="Git" selected>Git</option>
+            </select>
+
+            <input type="submit" value="Отправить" />
+        </form>
+    </body>
+</html>

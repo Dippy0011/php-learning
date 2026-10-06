@@ -1,0 +1,26 @@
+body {
+    background-color: blanchedalmond;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 12px;
+    width: min(28rem, calc(100% - 32px));
+    margin: 24px auto;
+    align-items: center;
+}
+
+label {
+    text-align: left;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+input[type="submit"] {
+    grid-column: 2;
+    justify-self: start;
+}
